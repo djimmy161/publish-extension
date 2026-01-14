@@ -265,7 +265,7 @@ export function intFromVersion(version) {
         const n = i < matches.length
             ? (parseInt(matches[i][0]) || 0)
             : 0;
-        versionInt = versionInt * 1000 + n;
+        versionInt = versionInt * 10000 + n;
     }
     return versionInt;
 }
